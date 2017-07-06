@@ -16,15 +16,12 @@
 index = []
 
 def add_to_index(index,keyword,url):
-    j,l=0,len(index)
-    while j<len(index):
-        if index[j][0]==keyword:
-            index[j][1].append(url)
+    for e in index
+        if e[0]==keyword:
+            e[1].append(url)
             return index
-        else:
-            j+=1
-    index.append([keyword,[]]) 
-    index[l][1].append(url)
+    index.append([keyword,[url]]) 
+   
     
 
 
