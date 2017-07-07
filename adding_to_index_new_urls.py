@@ -19,7 +19,7 @@ def add_to_index(index,keyword,url):
     for e in index
         if e[0]==keyword:
             e[1].append(url)
-            return index
+            return 
     index.append([keyword,[url]]) 
    
     
