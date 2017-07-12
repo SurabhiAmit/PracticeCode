@@ -6,11 +6,8 @@
 
 def make_hashtable(nbuckets):
     hashtable=[]
-    i=0
-    while i<nbuckets:
-        hashtable.append([])
-        i+=1
+    for i in range(0,nbuckets):
+    	hashtable.append([])
     return hashtable
-
 
 print make_hashtable(5)
