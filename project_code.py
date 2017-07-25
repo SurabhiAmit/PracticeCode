@@ -410,14 +410,27 @@ def get_path(network,checked, user_A, user_B,result):
         for entry in network[each][0]['friends_of_'+each]:
             if entry not in checked:
                 checked.append(each)
-                if user_A not in result:
+                if user_A not in result:														
                     result.append(user_A)
-                if each not in result:
+                if each not in result:														
                     result.append(each)
                 path= get_path(network,checked, entry, user_B,result)
                 if path:
                     return path
-        return None    
+        return None 
+        
+        
+  OR
+  
+for each in friends:
+  for entry in network[each][0]['friends_of_'+each]:  
+  	if entry not in checked:
+      checked.append(each)
+      path= get_path(network,checked, entry, user_B,result)
+          if path:
+            return [user_A,each]+path
+return None          
+     
                 
 print find_path_to_friend(net, "John", "Ollie")  
 #>>>['John', 'Bryant', 'Ollie']
