@@ -40,3 +40,41 @@ def randomintegers(a,b,count):
                 
                 
 print randomintegers(1,100,100)
+
+Better code to generate more random integers:
+
+def random(a,b,count):
+    num,i=0,a
+    while num < count:
+        if i% 3 ==0:
+            k=5*i%b
+            if k < b:
+                print k
+                num+=1
+            else:
+                print b-k
+                num+=1
+            i+=1
+        elif i%7==0:
+            k=7*i%b
+            if k < b:
+                print k
+                num+=1
+            else:
+                print b-k
+                num+=1
+            i+=1
+        else:
+            k=4*i%b
+            if k < b:
+                print k
+                num+=1
+            else:
+                print b-k
+                num+=1
+            i+=1
+            
+            
+        
+        
+random(1,100,100)
