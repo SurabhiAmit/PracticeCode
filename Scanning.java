@@ -16,3 +16,13 @@ public class Scanning {
 
     }
 }
+
+OUTPUT:
+
+Input the price of 3 items : 
+32.9
+4.65
+2
+Enter shopping place
+Kroger
+ You spent $39.55 at Kroger
